@@ -5,8 +5,6 @@ project:
         name:  SmallPackage
         namespace: gcc_09192019
         api_version: '46.0'
-    dependencies:
-        - github: 'https://github.com/SalesforceFoundation/Cumulus'
     source_format: sfdx
 
 tasks:
