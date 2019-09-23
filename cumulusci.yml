@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '2.5.8'
+project:
+    name: SmallPackage
+    package:
+        name:  SmallPackage
+        namespace: gcc_09192019
+        api_version: '46.0'
+    dependencies:
+        - github: '(https://github.com/SalesforceFoundation/Cumulus[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[[[3~[3~[F[F[F[B[B[C[B[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ https://github.com/SalesforceFoundation/Cumulus'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/SmallPackage/tests
+            options:
+                outputdir: robot/SmallPackage/results
+
+    robot_testdoc:
+        options:
+            path: robot/SmallPackage/tests
+            output: robot/SmallPackage/doc/SmallPackage_tests.html
+
+flows:
+    config_qa:
+        1.1:
+            task: deploy_qa_config
